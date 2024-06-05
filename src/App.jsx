@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import ImcForm from "./components/ImcForm";
+import ImageGallery from "./components/ImageGallery";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [page, setPage] = useState();
+  const proyectos = [
+    {
+      title: "calcular IMC",
+      page: <ImcForm />,
+    },
+    {
+      title: "Galeria de imagenes",
+      page: <ImageGallery />
+    }
+  ];
 
+  const renderPage = (data) => {
+    setPage(data.page);
+  };
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <h1>Elige que proyecto ver: </h1>
+      {proyectos.map((item) => {
+        return <button key={item.title} onClick={() => renderPage(item)}>{item.title}</button>;
+      })}
+      {page && page}
+    </div>
+  );
+};
 
-export default App
+export default App;

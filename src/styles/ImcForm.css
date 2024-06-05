@@ -1,0 +1,45 @@
+.titleContainer {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 20%;
+  padding-top: 20px;
+  margin-bottom: 12vh;
+  text-align: center;
+}
+
+.title {
+  width: 60%;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 12vh;
+}
+
+.fieldSet {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  gap: 4px;
+}
+
+.label {
+  font-size: 1.2rem;
+}
+
+.imageContainer {
+  background: url("/public/Untitled.png");
+  width: 69px;
+  height: 200px;
+}
+
+.resultado {
+  font-size: 1.6rem;
+}
