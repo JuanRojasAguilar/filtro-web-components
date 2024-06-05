@@ -51,9 +51,9 @@ const ImcForm = () => {
   }, [imc]);
 
   return (
-    <div className="appContainer">
+    <>
       <div className="titleContainer">
-        <h1 className="title">
+        <h1 className="formTitle">
           Bienvenido a la calculardora de Indice de Masa Corporal (IMC)!
         </h1>
       </div>
@@ -109,7 +109,7 @@ const ImcForm = () => {
           )}
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

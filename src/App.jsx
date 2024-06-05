@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ImcForm from "./components/ImcForm";
 import ImageGallery from "./components/ImageGallery";
+import WebApi from "./components/WebApi";
 
 const App = () => {
   const [page, setPage] = useState();
@@ -12,6 +13,10 @@ const App = () => {
     {
       title: "Galeria de imagenes",
       page: <ImageGallery />
+    },
+    {
+      title: "WebApi",
+      page: <WebApi />
     }
   ];
 
@@ -19,13 +24,13 @@ const App = () => {
     setPage(data.page);
   };
   return (
-    <div>
+    <>
       <h1>Elige que proyecto ver: </h1>
       {proyectos.map((item) => {
         return <button key={item.title} onClick={() => renderPage(item)}>{item.title}</button>;
       })}
       {page && page}
-    </div>
+    </>
   );
 };
 

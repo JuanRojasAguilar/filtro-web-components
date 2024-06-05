@@ -1,0 +1,38 @@
+.webapi {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.title {
+  color: blue;
+}
+
+.actualizar {
+  width: 80px;
+  background-color: darkgreen;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+.peopleInfoContainer {
+  display: flex;
+  gap: 12px;
+  width: 40%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.peopleName {
+  font-size: 1.6rem;
+}
+
+.selectedName {
+  font-size: 2.4rem;
+  margin: 40px 0 20px;
+}
+
+.infoDisplay {
+  font-size: 1.6rem;
+}

@@ -12,6 +12,7 @@ body {
   background-color: whitesmoke;
 }
 button {
+  border: 0px;
   height: 40px;
   min-width: 120px;
   padding: 0 8px;
