@@ -12,12 +12,12 @@ const App = () => {
     },
     {
       title: "Galeria de imagenes",
-      page: <ImageGallery />
+      page: <ImageGallery />,
     },
     {
       title: "WebApi",
-      page: <WebApi />
-    }
+      page: <WebApi />,
+    },
   ];
 
   const renderPage = (data) => {
@@ -27,7 +27,15 @@ const App = () => {
     <>
       <h1>Elige que proyecto ver: </h1>
       {proyectos.map((item) => {
-        return <button key={item.title} onClick={() => renderPage(item)}>{item.title}</button>;
+        return (
+          <button
+            className="pageChooser"
+            key={item.title}
+            onClick={() => renderPage(item)}
+          >
+            {item.title}
+          </button>
+        );
       })}
       {page && page}
     </>

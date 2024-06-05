@@ -1,4 +1,4 @@
-[
+const Imagenes = [
   {
     img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2018/06/X-Men-Havok-Comic-Art-Scream.jpg",
   },
@@ -36,3 +36,5 @@
     img: "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/7823917-marauders2019019_cov-scaled.jpg",
   },
 ];
+
+export default Imagenes;

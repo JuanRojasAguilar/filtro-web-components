@@ -1,0 +1,10 @@
+.galeria {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px
+}
+
+.heroImg {
+  width: 200px;
+  height: 300px;
+}

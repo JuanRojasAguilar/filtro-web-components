@@ -23,3 +23,7 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+.pageChooser {
+  margin-right: 12px;
+}
